@@ -33,13 +33,25 @@ const router = createBrowserRouter([
     ),
     children: [
       {
-        path: "/home",
+        path: "/",
         element: (
           <React.Suspense fallback={<h1>Loading</h1>}>
             <>
-              <h1>
+              <div>
                 hello
-              </h1>
+              </div>
+            </>
+          </React.Suspense>
+        ),
+      },
+      {
+        path: "/task",
+        element: (
+          <React.Suspense fallback={<h1>Loading</h1>}>
+            <>
+              <div>
+                task
+              </div>
             </>
           </React.Suspense>
         ),
